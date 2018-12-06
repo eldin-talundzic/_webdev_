@@ -1,0 +1,10 @@
+
+
+.box { width: 100px; float: left; margin: 0 10px 10px 0; }
+.red { color: red; background: pink;}
+.blue { color: blue; background:lightblue; }
+.border { border: 5px solid black; }
+
+.red.border {color:blue}
+/* .red.border {background:white} */
+.red.border {border-color:blue}

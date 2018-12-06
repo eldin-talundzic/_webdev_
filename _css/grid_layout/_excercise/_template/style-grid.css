@@ -1,0 +1,52 @@
+
+.site {
+/* displa:grid below defines the body element; turns on settings for developer tools = grid settings  */
+  display: grid;
+/* define grid lines with (em, px, %, fr, etc) denoting distance between grid */
+  grid-template-columns: 2fr 1fr 1fr;
+  grid-template-rows: auto 1fr 3fr;
+}
+
+/* By default (auto) items inside a container will auto populate cells from top left to bottom right.
+To place items in specific containers use: */
+.masthead {
+  grid-column: 2/4;  /* Declare start/end lines; start col 2 / end col 4 */
+  grid-row: 2/3;  /* start row 2 / end row 3 */
+}
+
+/* Span the page title the full width across the grid  */
+.page-title {
+  grid-column: 1/4;
+  grid-row: 1/2;
+}
+
+.main-content {
+  grid-column: 1/2;
+  grid-row: 2/4;
+}
+
+/* Grid will automatically create new lines, if implicitly added.
+This will add a new line (5) and place the footer at the end.
+Height is set to auto, if not declared */
+
+.footer-content {
+  grid-column: 1/4;
+  grid-row: 4;
+}
+/* However, its best if you try to use a pre-defined grid rather than implicitly
+adding new lines */
+
+/* Use the span keyword to define how many grid tracks an element should span.
+Below will take the .sidebar and span it 2 columns */
+
+.sidebar {
+grid-column: 2/4 span;
+grid-row: 3/4;
+
+}
+
+/* Grid-template area can turn the grid into a map, allowsing us to place items on
+that map */
+
+/* The minmax() func defines a size range greater than or equal to min endless than or equal to max;
+This is useful for responsive design (similar to min and max-wdith) */
