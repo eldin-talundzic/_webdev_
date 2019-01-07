@@ -1,6 +1,6 @@
 #### Example webpage
 
-Time to tie the different concepts together. Here is an example of a top section of a webpage using [responsive design](link) the `@media section` (see link for more information. Consider the following:
+Time to tie the different concepts together. Here is an example of a top section of a webpage using [responsive design](link) the `@media section` (see link for more information). Consider the following:
 
 ```html
 <!DOCTYPE html>
