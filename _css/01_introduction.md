@@ -1,5 +1,5 @@
 
-### Basic CSS guidelines
+### BASIC CSS GUIDELINES 
 
 Use an external **css** document to modify multiple **HTML** files.
 
